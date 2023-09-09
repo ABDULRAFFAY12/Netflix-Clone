@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="display-screen.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #000;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+img{
+    height: 50px;
+    padding: 26px;
+}
+.nav-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    padding:10px
+}
+.fa-magnifying-glass{
+    font-size: 1rem;
+    color: white;
+}
+input{
+    padding:10px;
+    background-color: rgb(26, 25, 25);
+    color: grey;
+    width: 250px;
+    border: none;
+    margin-left: 100px;
+}
+input:hover{
+    outline: 1px solid;
+}
+
+video{
+    height: 549px;
+    width: 93%;
+}
+h1{
+    color:white;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+.trending-images{
+    display: flex;
+ justify-content: space-evenly;
+ 
+}
+.img1{
+    border-radius: 20px;
+    height: 180px;
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #000;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+img{
+    height: 50px;
+    padding: 26px;
+}
+.nav-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    padding:10px
+}
+.fa-magnifying-glass{
+    font-size: 1rem;
+    color: white;
+}
+input{
+    padding:10px;
+    background-color: rgb(26, 25, 25);
+    color: grey;
+    width: 250px;
+    border: none;
+    margin-left: 100px;
+}
+input:hover{
+    outline: 1px solid;
+}
+
+video{
+    height: 549px;
+    width: 93%;
+}
+h1{
+    color:white;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+.trending-images{
+    display: flex;
+ justify-content: space-evenly;
+ 
+}
+.img1{
+    border-radius: 20px;
+    height: 180px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    img {
+        height: 40px;
+        padding: 10px;
+        margin-top: 4%;
+    }
+
+    .nav-content a {
+        display: none;
+    }
+
+    input {
+        width: 80%;
+        margin: 10px 0;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    video {
+        height: 205px ;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .img1 {
+        height: 110px;
+    }
+    .trending-images{
+        flex-wrap: wrap;
+    }
+
+}
+    </style>
+</head>
+<body>
+   <div class="navbar">
+    <img src="netflix-logo.png" alt="" class="logo">
+    <div class="nav-content">
+      <a href="">Home</a>
+      <a href="">Tv Shows</a>
+      <a href="">Movies</a>
+      <a href="">News & Popular</a>
+      <a href="">My List</a>
+      <a href="">Browse by Language</a>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search in Netflix">
+    </div>
+    <div class="icon">
+       <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div> 
+   </div> 
+   <div class="vedio">
+    <video autoplay controls src="SPIDER-MAN- INTO THE SPIDER-VERSE - Official Trailer (HD).mp4"></video>
+   </div>
+    <h1> Trending now</h1>
+    <div class="trending-images">
+        <img src="naruto.jpg" alt="" class="img1">
+        <img src="dark.jpg" alt="" class="img1">
+        <img src="ST.jpg" alt="" class="img1">
+        <img src="peaky.jpg" alt="" class="img1">
+        <img src="naruto.jpg" alt="" class="img1">
+        <img src="dark.jpg" alt="" class="img1">
+        <img src="ST.jpg" alt="" class="img1">
+        <img src="peaky.jpg" alt="" class="img1">
+    </div>
+</body>
+</html>
