@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url(login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-section {
+    background-color: rgba(23, 20, 20, 0.84); /* Semi-transparent black background */
+    width: 24%; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow */
+    color: white;
+    margin-right: 9px;
+    margin-top: 66px;
+}
+.login-section h1{
+    padding: 20px;
+}
+input{
+    width: 90%;
+    height: 56px;
+    margin: 13px;
+    padding-left: 10px;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.input1{
+    width: 90%;
+    height: 56px;
+    margin: 13px;
+    padding-left: 10px;
+    background-color: rgb(52, 47, 47);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button{
+    background-color: red;
+    padding: 10px;
+    border: none;
+    color: white;
+    width: 93%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    align-items: revert;
+    margin-top: 31px;
+    margin-left: 13px;
+  }
+  button a{
+    color: white;
+text-decoration: none; 
+}
+.error-message {
+            color: red;
+            font-size: 17px;
+            margin-top: 10px;
+            text-align: center;
+}
+/* Add this media query for mobile devices */
+/* Add this media query for mobile devices */
+@media screen and (max-width: 1268px) {
+   
+    body{
+        background-image: url(login-bg.jpg)  ;
+        background-repeat: repeat;        
+    }
+
+    .login-section {
+        width: 75%; /* Make the form smaller */
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 450px;
+margin-top: 30%;
+    }
+
+    .login-section h1 {
+        padding: 20px ; /* Reduce heading padding */
+        text-align: center;
+    }
+
+    input, .input1 {
+        width: 85%; /* Full-width input fields */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 70%; /* Full-width button */
+        margin-top: 25px; /* Adjust margin-top */
+        margin-left: 0; /* Reset margin-left */
+    }
+
+    /* Optionally, you can adjust other styles as needed for mobile devices */
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-section">
+        <h1>Sign in</h1>
+        <input type="text" id="emailInput" placeholder="Enter your email">
+        <input type="password" id="passwordInput" placeholder="Enter your password" class="input1">
+        <button id="signInButton">Sign in</button>
+        <p class="error-message" id="errorMessage"></p>
+    </div>
+    <script src="login-screen.js"></script>
+</body>
+<script>
+    const passwordInput = document.getElementById("passwordInput")
+const emailInput=document.getElementById("emailInput")
+const signInButton= document.getElementById("signInButton")
+const errorMessage =document.getElementById("errorMessage")
+
+signInButton.addEventListener('click',()=>{
+    const enteredEmail= emailInput.value
+    const enteredPassword=passwordInput.value
+    if( enteredEmail =='sabirkhanek66@gmail.com' && enteredPassword=='betrayedbypeasants'){
+window.location.href="screen-selector.html"
+    }
+    else{
+        errorMessage.textContent=" Invalid email or password"
+    }
+})
+</script>
+</html>
