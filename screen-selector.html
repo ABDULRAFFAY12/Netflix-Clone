@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Selection</title>
+    <link href="https://fonts.cdnfonts.com/css/netflix-font" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+}
+
+body {
+    background: #000;
+}
+
+.section1 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 10%;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 16%;
+    margin-top: 2%;
+}
+
+.image-container {
+    text-align: center;
+    color: white;
+}
+
+.img1 {
+    height: 180px;
+    margin-top: 4%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.img1:hover {
+    outline: 2.5px solid white;
+    outline-offset: -10px;
+}
+
+.image-container p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: rgba(224, 198, 198, 0.5);
+}
+
+.image-container:hover {
+    color: rgb(182, 208, 206);
+}
+button{
+ margin-top: 6%;
+padding: 10px;
+width: 200px;
+color: rgb(87, 86, 86);
+background: #000;
+border-color: rgb(87, 86, 86);
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    border-color: white;
+    color: white;
+}
+@media (max-width: 768px) {
+    .section1 {
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+
+    .image-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px;
+        margin-top:12%
+    }
+
+    .image-container {
+        text-align: center;
+        margin: 10px;
+        flex: 1 0 calc(50% - 20px);
+    }
+
+    .img1 {
+        height: 130px;
+        margin: 0;
+        padding: 3px;
+    }
+
+    .image-container p {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        display:none;
+    }
+
+}
+.image-container p  :hover{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="first-screen">
+        <div class="section1">
+            <h1>
+                Who's watching?
+            </h1>
+        </div>
+        <div class="image-section">
+            <div class="image-container">
+                <a href="display-screen.html" target="_self">
+                    <img src="lisa.png" alt="" class="img1">
+                </a>
+                <p>Sabir</p>
+            </div>
+            <div class="image-container">
+                <a href="display-screen.html" target="_self">
+                    <img src="grealt.png" alt="" class="img1">
+                </a>
+                <p>ARK</p>
+            </div>
+            <div class="image-container">
+                <a href="display-screen.html" target="_self">
+                    <img src="adam.png" alt="" class="img1">
+                </a>
+                <p>Taymoor</p>
+            </div>
+            <div class="image-container">
+                <a href="display-screen.html" target="_self ">
+                <img src="dali.png" alt="" class="img1">
+            </a>
+                <p>Thor</p>
+            </div>
+            <div class="image-container">
+                <a href="display-screen.html" target="_self">
+                    <img src="emmy.png" alt="" class="img1">
+                </a>
+                <p>Razz</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>Manage profiles</button>
+        </div>
+    </div>
+</body>
+</html>
